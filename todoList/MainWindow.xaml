@@ -44,9 +44,9 @@
             </Grid.ColumnDefinitions>
 
             <TextBox  Text="{Binding TaskName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-
+            
             <Button Grid.Column="1" Content="Add Task" Command="{Binding CreateTaskCommand}" CommandParameter="{Binding}"/>
-            <Button Content="Delete" Margin="0,-25,517,25"/>
+            <Button Content="Delete" x:Name="delete" Margin="0,-25,517,25"/>
         </Grid>
 
     </Grid>
